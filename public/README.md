@@ -7,6 +7,7 @@ cheap and easy too, dun need to spin up a backend server, just serve these as st
 # usage
 
 basic usage
+
 ```bash
 # shows all files
 curl -fsSL gjt.io/ls
@@ -23,6 +24,7 @@ curl -fsSL gjt.io/helloworld.js | node
 ```
 
 alias
+
 ```bash
 # downloads gjt.io/bashrc into ~/.bashrc_gj
 curl -fsSL gjt.io/source.sh | bash

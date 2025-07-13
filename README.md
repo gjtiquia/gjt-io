@@ -1,6 +1,6 @@
 # gjt-io
 
-used as a url shortener / redirect service 
+used as a url shortener / redirect service
 
 redirects on the client-side because its cheaper than running my own backend
 
