@@ -1,7 +1,26 @@
 import { Hono } from 'hono'
 
 const app = new Hono()
+    // gjtiquia.com
     .get('/', (c) => c.redirect("https://gjtiquia.com/?utm_source=gjt"))
-    .get('/txt', (c) => c.redirect("https://minitextarea.gjt.io/?utm_source=gjt"))
+    .get('/resume', (c) => c.redirect("https://gjtiquia.com/resume/?utm_source=gjt"))
+
+    // github
+    .get('/repo', (c) => c.redirect("https://github.com/gjtiquia?tab=repositories"))
+    .get('/repos', (c) => c.redirect("https://github.com/gjtiquia?tab=repositories"))
+    .get('/dotfiles', (c) => c.redirect("https://github.com/gjtiquia/dotfiles"))
+
+    // projects
+    .get('/txt', (c) => c.redirect("https://minitextarea.gjt.io/"))
+    .get('/textarea', (c) => c.redirect("https://minitextarea.gjt.io/"))
+
+    .get('/cp', (c) => c.redirect("https://ijustwannacopypaste.gjt.io/"))
+    .get('/copypaste', (c) => c.redirect("https://ijustwannacopypaste.gjt.io/"))
+
+    .get('/base64', (c) => c.redirect("https://base64anything.gjt.io/"))
+    .get('/bored', (c) => c.redirect("https://beingbored.gjt.io/"))
+
+    .get('/seat', (c) => c.redirect("https://whereismyseat.gjt.io/e/gj-eunice-wedding-2025/landing"))
+    .get('/wedding', (c) => c.redirect("https://twitch.tv/gjtiquia"))
 
 export default app
