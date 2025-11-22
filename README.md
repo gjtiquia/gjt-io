@@ -22,7 +22,7 @@ bun install
 bun run dev
 
 # deploy to Cloudflare Workers
-bun run deplot
+bun run deploy
 
 # preview production build
 pnpm preview
