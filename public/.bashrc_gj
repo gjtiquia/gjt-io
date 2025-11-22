@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# aliases
+alias q="exit"
+alias c="clear"
+
+# aliases - tools
+alias ff="fastfetch"
+alias cf="c & ff"
+alias v="vim" # "nvim"
+alias lg="lazygit"
+alias ld="lazydocker"
