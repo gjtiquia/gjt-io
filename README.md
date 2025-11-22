@@ -23,9 +23,6 @@ bun run dev
 
 # deploy to Cloudflare Workers
 bun run deploy
-
-# preview production build
-pnpm preview
 ```
 
 ## license
