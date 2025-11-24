@@ -1,6 +1,12 @@
 import { Hono } from 'hono'
+import { HonoOptions } from 'hono/hono-base'
 
-const app = new Hono()
+const app = new Hono({
+    // so that /repo and /repo/ will be treated as the same endpoint
+    // docs: https://hono.dev/docs/api/hono#strict-mode
+    strict: false
+})
+
     // gjtiquia.com
     .get('/', (c) => c.redirect("https://gjtiquia.com/?utm_source=gjt"))
     .get('/resume', (c) => c.redirect("https://gjtiquia.com/resume/?utm_source=gjt"))
